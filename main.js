@@ -32,6 +32,10 @@ function animate(){
     // this keep displaying the box geometry
     requestAnimationFrame(animate);
 
+    // rotate the cube based on axis by speed
+    cube.rotation.x += 0.03;
+    cube.rotation.y += 0.03;
+
     renderer.render(scene, camera);
 }
 
